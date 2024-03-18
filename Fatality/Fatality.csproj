@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB4706A0-265F-4B25-A9EC-87361033051E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fatality</RootNamespace>
+    <AssemblyName>Fatality</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <CscToolPath>C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\Roslyn</CscToolPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EnsoulSharp">
+      <HintPath>C:\Users\Senth\Documents\Mogeln\League\EnsoulSharp\Reference\EnsoulSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="EnsoulSharp.SDK">
+      <HintPath>C:\Users\Senth\Documents\Mogeln\League\EnsoulSharp\Reference\EnsoulSharp.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>C:\Users\Senth\Documents\Mogeln\League\EnsoulSharp\Reference\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Users\Senth\Documents\Mogeln\League\EnsoulSharp\Reference\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>C:\Users\Senth\Documents\Mogeln\League\EnsoulSharp\Reference\PresentationFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX">
+      <HintPath>C:\Users\Senth\Documents\Mogeln\League\EnsoulSharp\Reference\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11">
+      <HintPath>C:\Users\Senth\Documents\Mogeln\League\EnsoulSharp\Reference\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D9">
+      <HintPath>C:\Users\Senth\Documents\Mogeln\League\EnsoulSharp\Reference\SharpDX.Direct3D9.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI">
+      <HintPath>C:\Users\Senth\Documents\Mogeln\League\EnsoulSharp\Reference\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics">
+      <HintPath>C:\Users\Senth\Documents\Mogeln\League\EnsoulSharp\Reference\SharpDX.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Champions\Ahri\Ahri.cs" />
+    <Compile Include="Champions\Akali\Akali.cs" />
+    <Compile Include="Champions\Ashe\Ashe.cs" />
+    <Compile Include="Champions\Aurelion\AurelionSol.cs" />
+    <Compile Include="Champions\Blitzcrank\Blitzcrank.cs" />
+    <Compile Include="Champions\Brand\Brand.cs" />
+    <Compile Include="Champions\Caitlyn\Caitlyn.cs" />
+    <Compile Include="Champions\Cassiopeia\Cassiopeia.cs" />
+    <Compile Include="Champions\Corki\Corki.cs" />
+    <Compile Include="Champions\Diana\Diana.cs" />
+    <Compile Include="Champions\Ezreal\Ezreal.cs" />
+    <Compile Include="Champions\Jhin\Jhin.cs" />
+    <Compile Include="Champions\Jinx\Jinx.cs" />
+    <Compile Include="Champions\Kalista\Kalista.cs" />
+    <Compile Include="Champions\Karthus\Karthus.cs" />
+    <Compile Include="Champions\Katarina\Katarina.cs" />
+    <Compile Include="Champions\Kayn\Kayn.cs" />
+    <Compile Include="Champions\Kennen\Kennen.cs" />
+    <Compile Include="Champions\Khazix\Khazix.cs" />
+    <Compile Include="Champions\Kogmaw\Kogmaw.cs" />
+    <Compile Include="Champions\Ksante\Ksante.cs" />
+    <Compile Include="Champions\Lucian\Lucian.cs" />
+    <Compile Include="Champions\Lux\Lux.cs" />
+    <Compile Include="Champions\MasterYi\MasterYi.cs" />
+    <Compile Include="Champions\Milio\Milio.cs" />
+    <Compile Include="Champions\Neeko\Neeko.cs" />
+    <Compile Include="Champions\Nocturne\Nocturne.cs" />
+    <Compile Include="Champions\Olaf\Olaf.cs" />
+    <Compile Include="Champions\Pyke\Pyke.cs" />
+    <Compile Include="Champions\Riven\Riven.cs" />
+    <Compile Include="Champions\Samira\Samira.cs" />
+    <Compile Include="Champions\Shyvana\Shyvana.cs" />
+    <Compile Include="Champions\Soraka\Soraka.cs" />
+    <Compile Include="Champions\Sylas\Sylas.cs" />
+    <Compile Include="Champions\Tristana\Tristana.cs" />
+    <Compile Include="Champions\TwistedFate\CardSelector.cs" />
+    <Compile Include="Champions\TwistedFate\TwistedFate.cs" />
+    <Compile Include="Champions\Twitch\Twitch.cs" />
+    <Compile Include="Champions\Varus\ADVarus.cs" />
+    <Compile Include="Champions\Varus\APVarus.cs" />
+    <Compile Include="Champions\Vayne\Vayne.cs" />
+    <Compile Include="Champions\Xerath\Xerath.cs" />
+    <Compile Include="Champions\Yasuo\Yasuo.cs" />
+    <Compile Include="Champions\Yone\Yone.cs" />
+    <Compile Include="Champions\Zeri\Zeri.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resource1.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Activator.cs" />
+    <Compile Include="Utils\API.cs" />
+    <Compile Include="Utils\FatalityAwareness\Awareness.cs" />
+    <Compile Include="Utils\Base.cs" />
+    <Compile Include="Utils\Developer.cs" />
+    <Compile Include="Utils\FatalityAwareness\ChampionSkinData.cs" />
+    <Compile Include="Utils\FatalityRenderRing.cs" />
+    <Compile Include="Utils\HpBarIndicator.cs" />
+    <Compile Include="Utils\Oktw\Cache.cs" />
+    <Compile Include="Utils\Oktw\Geometry.cs" />
+    <Compile Include="Utils\Oktw\HealthPrediction.cs" />
+    <Compile Include="Utils\Oktw\MEC.cs" />
+    <Compile Include="Utils\Oktw\MinionManager.cs" />
+    <Compile Include="Utils\Oktw\OktwCommon.cs" />
+    <Compile Include="Utils\Oktw\PredictionOktw.cs" />
+    <Compile Include="Utils\Orbwalker.cs" />
+    <Compile Include="Utils\SPrediction\AIHeroClientExtensions.cs" />
+    <Compile Include="Utils\SPrediction\ArcPrediction.cs" />
+    <Compile Include="Utils\SPrediction\CirclePrediction.cs" />
+    <Compile Include="Utils\SPrediction\ClipperWrapper.cs" />
+    <Compile Include="Utils\SPrediction\Collision.cs" />
+    <Compile Include="Utils\SPrediction\ConePrediction.cs" />
+    <Compile Include="Utils\SPrediction\ConfigMenu.cs" />
+    <Compile Include="Utils\SPrediction\Drawings.cs" />
+    <Compile Include="Utils\SPrediction\Geometry.cs" />
+    <Compile Include="Utils\SPrediction\LinePrediction.cs" />
+    <Compile Include="Utils\SPrediction\MinionManager.cs" />
+    <Compile Include="Utils\SPrediction\PathTracker.cs" />
+    <Compile Include="Utils\SPrediction\Prediction.cs" />
+    <Compile Include="Utils\SPrediction\RingPrediction.cs" />
+    <Compile Include="Utils\SPrediction\SpellExtensions.cs" />
+    <Compile Include="Utils\SPrediction\StasisPrediction.cs" />
+    <Compile Include="Utils\SPrediction\Utility.cs" />
+    <Compile Include="Utils\SPrediction\VectorPrediction.cs" />
+    <Compile Include="Utils\TargetDataBase.cs" />
+    <Compile Include="Utils\xcsoftPrediction.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Activator.png" />
+    <Content Include="Resources\Ahri.png" />
+    <Content Include="Resources\Akali.png" />
+    <Content Include="Resources\Ashe.png" />
+    <Content Include="Resources\AurelionSol.png" />
+    <Content Include="Resources\Awareness.png" />
+    <Content Include="Resources\BaronTracker.png" />
+    <Content Include="Resources\Blitzcrank.png" />
+    <Content Include="Resources\Brand.png" />
+    <Content Include="Resources\Caitlyn.png" />
+    <Content Include="Resources\Cassiopeia.png" />
+    <Content Include="Resources\Core.png" />
+    <Content Include="Resources\Corki.png" />
+    <Content Include="Resources\Diana.png" />
+    <Content Include="Resources\Ezreal.png" />
+    <Content Include="Resources\Jhin.png" />
+    <Content Include="Resources\Jinx.png" />
+    <Content Include="Resources\Kalista.png" />
+    <Content Include="Resources\Karthus.png" />
+    <Content Include="Resources\Katarina.png" />
+    <Content Include="Resources\Kayn.png" />
+    <Content Include="Resources\Kennen.png" />
+    <Content Include="Resources\Khazix.png" />
+    <Content Include="Resources\KogMaw.png" />
+    <Content Include="Resources\KSante.png" />
+    <Content Include="Resources\Lucian.png" />
+    <Content Include="Resources\Lux.png" />
+    <Content Include="Resources\MasterYi.png" />
+    <Content Include="Resources\Neeko.png" />
+    <Content Include="Resources\Nocturne.png" />
+    <Content Include="Resources\Olaf.png" />
+    <Content Include="Resources\Pyke.png" />
+    <Content Include="Resources\Riven.png" />
+    <Content Include="Resources\Samira.png" />
+    <Content Include="Resources\Shyvana.png" />
+    <Content Include="Resources\Soraka.png" />
+    <Content Include="Resources\Sylas.png" />
+    <Content Include="Resources\Tristana.png" />
+    <Content Include="Resources\TwistedFate.png" />
+    <Content Include="Resources\Twitch.png" />
+    <Content Include="Resources\Varus.png" />
+    <Content Include="Resources\Vayne.png" />
+    <Content Include="Resources\Xerath.png" />
+    <Content Include="Resources\Yasuo.png" />
+    <Content Include="Resources\Yone.png" />
+    <Content Include="Resources\Zeri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+</Project>
